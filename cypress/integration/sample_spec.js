@@ -4,8 +4,8 @@ describe('My First Test', function() {
 
         cy.contains('Sign in').click();
 
-        cy.get('input[type=email]').type("mrpandat@lol.fr")
-        cy.get('input[type=password]').type("mrpandat@lol.frmrpandat@lol.fr")
+        cy.get('input[type=email]').type("example@lol.fr")
+        cy.get('input[type=password]').type("example**123")
         cy.get('button[type=submit]').click();
         cy.contains('No articles are here... yet.')
     })
